@@ -8,7 +8,7 @@ import java.util.List;
 
 public class BST  {
     // The BST keeps track of its root node
-    private Node root;
+    Node root;
 
     // At the beginning, there are no nodes
     public BST() {
@@ -17,31 +17,48 @@ public class BST  {
 
     // Searches the BST for the given value
     public boolean search(int val) {
-        // REPLACE WITH YOUR CODE HERE
+        Node curr = root;
+        while (curr != null) {
+            if (val > curr.data) {
+                curr = curr.right;
+            } else if (val < curr.data) {
+                curr = curr.left;
+            } else {
+                return true;
+            }
+        }
         return false;
     }
 
     // Wrapper method for recursive search
     // Don't edit this method
-    private boolean recursiveSearch(int val) {
+    boolean recursiveSearch(int val) {
         return searchRec(val, root);
     }
 
     // Recursively searches the BST for val
     private static boolean searchRec(int val, Node current) {
-        // REPLACE WITH YOUR CODE HERE
-        return false;
+        if (current == null) {
+            return false;
+        }
+        if (val > current.data) {
+            return searchRec(val, current.right);
+        }
+        if (val < current.data) {
+            return searchRec(val, current.left);
+        }
+        return true;
     }
 
     // Inserts a value into the BST
-    private void insert(int val) {
+    public void insert(int val) {
         // REPLACE WITH YOUR CODE HERE
         return;
     }
 
     // Wrapper method for recursive insertion
     // Don't edit this method
-    private void recursiveInsert(int val) {
+    void recursiveInsert(int val) {
         root = insertRec(val, root);
     }
 

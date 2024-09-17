@@ -5,7 +5,7 @@ import java.util.LinkedList;
  * List Anyone You Collaborated With (if any):
  */
 
-public class BSTSet {
+public class BSTSet extends BST {
     // The BST keeps track of its root node
     private Node root;
 
@@ -66,10 +66,6 @@ public class BSTSet {
     public String toString() {
         return "" + this.inOrderList();
     }
-
-    // *************
-    // COPY YOUR BST METHODS IN BELOW HERE (insert, search, delete, inorder, etc.)
-    // *************
 
     public static void main(String[] args) {
         // --------------------------
