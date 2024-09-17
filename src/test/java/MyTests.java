@@ -20,9 +20,9 @@ public class MyTests {
     @Test
     public void testInsertRec() {
         BST integerBST = new BST();
-        integerBST.insert(4);
-        integerBST.insert(7);
-        integerBST.insert(3);
+        integerBST.recursiveInsert(4);
+        integerBST.recursiveInsert(7);
+        integerBST.recursiveInsert(3);
         integerBST.insert(8);
 
         assertEquals(4, integerBST.root.data);
