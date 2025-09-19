@@ -441,20 +441,6 @@ public class BST  {
 
 }
 
-// Each node will have a data value as well
-// as possibly a left and right child
-class Node  {
-    int data;
-    Node left;
-    Node right;
-
-    public Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 // Print binary tree in a helpful way
 // from: https://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
 class BTreePrinter {

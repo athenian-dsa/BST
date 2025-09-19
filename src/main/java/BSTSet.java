@@ -6,9 +6,6 @@ import java.util.LinkedList;
  */
 
 public class BSTSet extends BST {
-    // The BST keeps track of its root node
-    private Node root;
-
     // At the beginning, there are no nodes
     public BSTSet() {
         this.root = null;
@@ -102,7 +99,7 @@ public class BSTSet extends BST {
         System.out.println("Expected:");
         System.out.println("[1, 2, 4, 5, 6, 7, 8]\n" +
                 "[1, 2]\n" +
-                "[1, 2, 4, 5]");
+                "[4, 5]");
 
 
         System.out.println("\nGot:");

@@ -1,6 +1,6 @@
 // Each node will have a data value as well
 // as possibly a left and right child
-class DictionaryNode  {
+public class DictionaryNode  {
     int key;
     String value;
     DictionaryNode left;
